@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="titleContainer">  
+      <h1>Shopping List</h1>
+      <div class="menuContainer">
+        <button class="btnMenu">≡</button>
+        <div class="positionRelativeBox">
+          <div class="boxOptionMenu">
+            <a onclick="deleteShopingListAppear();" class="optionMenu">Delete Shopping List</a>
+            <a href="./manageRecipes.html" class="optionMenu">Manage Recipes</a>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+
+    <div class="titleContainer">
+      <div class="addItemsContainer">
+        <input type="text" id="textareaItem"></input>
+        <button class="addButton" onclick="addItem()">
+          <span class="plus">+ </span>Add Item
+        </button>
+      </div>
+
+      <div class="addRecipeContainer">        
+        <button class="btnAddRecipe">Add Recipe ↓</button>
+        <div class="positionRelativeBox">
+          <div class="recipesBox">
+            <a class="recipes" id="noRecipesSL">No Recipes</a>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+    <div  class="listContainer">
+      <ul id="shopping-list">
+        <li class="item">          
+          
+        </li>
+      </ul>
+    </div>
+    
+    
+    <div class="deleteShopingList">
+      <h2>Do you want delete the shoping list?</h2>
+      <button id="btnYesDeleteSL">Yes</button>
+      <button onclick="document.querySelector('.deleteShopingList').style.display = 'none';">No</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,400 @@
+body {
+  font-family:  Calibri;
+  background-color: lightgreen;
+  
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px orange;
+  color: green;
+  
+  
+}
+.titleContainer{        
+  display: flex;
+  gap: 5%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+  
+
+}
+
+/*Menu top right of the screen*/
+.menuContainer{        
+  display: flex;
+  position: relative;        
+  position:static;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 110px;
+}
+  
+.btnMenu {
+  align-self: flex-end;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: orange;
+  box-shadow: 3px 3px 3px rgb(237, 101, 11);  
+  height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: green;
+        
+}
+
+.optionMenu {        
+  display: block;
+  text-decoration: none;
+  color:green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.optionMenu:hover {
+  background-color: yellowgreen;
+  box-shadow: 3px 0px 3px green;
+}
+
+.positionRelativeBox{
+  position: relative;
+}
+.boxOptionMenu {
+  display: none;
+  position: absolute;        
+  z-index: 1;
+  flex-direction: column;
+  background-color: orange;
+  box-shadow: 3px 3px 3px rgb(237, 101, 11);
+  padding: 0;        
+  border-radius: 5px;
+  margin: 0;
+  right: 0px;
+  width: 190px;
+}
+
+
+/*Window delete shopping list */
+.deleteShopingList { 
+  display: none;     
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  top: 30%;
+  left: 25%;     
+  visibility: visible;
+  background-color: orange;
+  justify-content: center;
+  max-width: 300px;
+  box-shadow: 3px 3px 3px rgb(237, 101, 11);
+  text-align: center; 
+  border-radius: 5px;
+  padding: 5px;
+  margin: auto; 
+  color: green;     
+}
+
+.deleteShopingList button {
+  position: relative;
+  background-color: greenyellow;
+  font-weight: bolder;
+  color: green;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 3px;
+  position: dragble      
+}
+
+.deleteShopingList button:active {      
+  background-color: greenyellow;
+  box-shadow: 0px 0px 0px;
+  transform: translate(3px, 3px);
+  object-position: 10 10;
+}
+
+
+
+.addItemsContainer {
+  display:flex;
+  width: 100%;
+ 
+  
+}
+
+#textareaItem {
+  width: 50%;
+  background-color: orange;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+  box-shadow: 4px 4px 3px rgb(237, 101, 11);
+  color: green;
+  outline: none;    
+
+}
+
+
+.plus {
+  font-size: 1.3rem;
+}
+
+.addButton {
+  border: none;    
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px;
+  box-shadow: 4px 4px 3px rgb(237, 101, 11);
+  color: green;
+}
+.addButton:active {      
+  
+  box-shadow: 0px 0px 0px;
+  transform: translate(3px, 3px);
+  object-position: 10 10;
+}
+
+/*Add Recipes Menu*/
+.addRecipeContainer{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.btnAddRecipe{
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 1rem;        
+  box-shadow: 4px 4px 3px rgb(237, 101, 11);
+  color:green;
+  padding: 5px;
+  height: 100%;
+  
+}
+
+
+.recipesBox{
+  display: none;
+  position: absolute;        
+  z-index: 1;        
+  background-color: orange;
+  box-shadow: 3px 3px 3px rgb(237, 101, 11);
+  padding: 0;        
+  border-radius: 5px;
+  margin: 0;
+  right: 0px;
+  min-width: 100%;
+}
+
+.recipes{
+  display: block;
+  text-decoration: none;
+  color:green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.recipes:hover {
+  background-color: yellowgreen;
+  box-shadow: 3px 0px 3px green;
+}
+
+.listContainer {
+  display:flex;  
+  justify-content: center;
+}
+
+/*Shopping list*/
+#shopping-list {
+  font-size: 1rem;
+  text-decoration: none;        
+}
+.item {
+  display: flex;
+  align-items: center;        
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.item button{
+  margin-right:10px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: darkred;
+  font-weight: bold;        
+}
+
+.item a{
+  color:green; 
+}
+
+.item input{
+  color: green;
+}
+
+.item span{
+  font-size: 0.9rem;
+  color: yellow;
+  text-shadow: 2px 2px 2px orange;
+}
+
+.lineThrough{
+  text-decoration: line-through;
+}
+
+/*MANAGE RECIPES*/
+/*MANAGE RECIPES*/
+
+.btnBack:active {  
+    box-shadow: 0px 0px 0px;
+    transform: translate(3px, 3px);
+    object-position: 10 10;
+}
+
+.btnManageAspect {  
+  border: none;    
+  border-radius: 5px;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 5px;
+  box-shadow: 4px 4px 3px rgb(237, 101, 11);
+  color: green;
+}
+.btnPressAdd:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px;
+}
+
+.noneDisplay {
+  display: none;
+}
+
+.textareaIngredient {
+  width: 50%;
+  background-color: orange;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+  box-shadow: 4px 4px 3px rgb(237, 101, 11);
+  color: green;
+  outline: none;    
+}
+
+/*Manage recepies menu*/
+.btnManRec {
+  display:block;
+}
+
+.manageRecipesBox {
+  display: none;
+  position: absolute;        
+  z-index: 1;        
+  background-color: orange;
+  box-shadow: 3px 3px 3px rgb(237, 101, 11);
+  padding: 0;        
+  border-radius: 5px;
+  margin: 0;
+  right: 0px;
+  min-width: 100%;
+}
+
+.btnDelRec {
+  display:block;
+}
+
+.deleteRecipesBox {
+  display: none;
+  position: absolute;        
+  z-index: 1;        
+  background-color: orange;
+  box-shadow: 3px 3px 3px rgb(237, 101, 11);
+  padding: 0;        
+  border-radius: 5px;
+  margin: 0;
+  right: 0px;
+  min-width: 100%;
+}
+/*Recepy */
+.recepieContainer {
+  display: block;
+  margin-left: 20%;  
+}
+
+#recipeName {
+  display: none; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: yellow;
+  text-shadow: 2px 2px 2px orange;
+  outline: none;
+  cursor: pointer; 
+}
+
+#recipeName:focus {
+  background-color: orange;
+}
+
+#ingredientListJS input {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: green;  
+  outline: none;
+  cursor: pointer; 
+}
+
+#ingredientListJS input:focus {
+  background-color: orange;
+}
+
+#btnwidth{
+  visibility: hidden;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  
+
+}
+
+
+
+

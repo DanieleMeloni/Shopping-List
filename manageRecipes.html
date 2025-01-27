@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Recipes</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div class="titleContainer">
+    <h1>Manage Recipes</h1>
+    <a><button class="btnMenu btnBack"
+    onclick="backButton();"
+    >←</button></a>
+  </div>
+
+  <div class="mainOne titleContainer">
+  
+    <button class="btnManageAspect btnPressAdd a"
+    onclick="manageRecipes();"
+    >Add Recipe</button>    
+    
+    <div class="manageRecipeContainer b">      
+      <button class="btnManageAspect btnManRec">Manage Recipe</button>
+      <div class="positionRelativeBox">
+        <div class="manageRecipesBox" id="manageRecipesBoxJS">
+          <a class="recipes" id="addRJS" onclick="manageRecipes()">Add Recipe</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="deleteRecipeContainer c">
+      <button class="btnManageAspect btnDelRec">Delete Recipe</button>
+      <div class="positionRelativeBox">
+        <div class="deleteRecipesBox" id="deleteRecipesBoxJS">
+          <a class="recipes" id="noRJS">No Recipes</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="addItemsContainer noneDisplay d">
+      <input type="text" id="textAreaIngrJS" class="textareaIngredient" />
+      <button  class="addButton" onclick="addRecipeElement();"><span class='plus'>+ </span>Add Name</button>
+    </div>
+    <button class="btnManageAspect btnPressAdd noneDisplay e"
+    onclick="saveRecipe();"
+    >Save</button>
+
+  </div>
+
+  <div class="recepieContainer">
+    <input id="recipeName" type="text" />
+    <ul id="ingredientListJS"></ul>
+    <button id="btnwidth">width</button>
+  </div>
+
+
+
+  <script src="./manageRecipes.js"></script>
+</body>
+</html>
